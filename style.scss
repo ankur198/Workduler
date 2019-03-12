@@ -109,15 +109,77 @@ section {
             padding: 10px;
             font-weight: bold;
 
-            &:hover{
+            &:hover {
                 background-color: $color3-d;
             }
         }
 
-        p{
+        p {
             font-size: 0.8em;
         }
     }
+}
+
+.boardDetail {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 100%;
+    padding: 50px;
+
+    #detail {
+        margin: 10px;
+        background-color: $color1-d;
+        height: 100%;
+        padding: 80px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        .subtask{
+            display: flex;
+            flex-direction: column;
+
+            div{
+                margin: 5px;
+            }
+        }
+    }
+
+    #chat {
+        margin: 10px;
+        margin-top: 50px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        input{
+            background: transparent;
+            border: 1px solid white;
+            height: 4em;
+            border-radius: 5px;
+            margin-bottom: 50px;
+            padding-left: 5px;
+        }
+        .chatBubble{
+            padding: 20px 10px;
+            margin: 10px 0;
+            background-color: $color3-d;
+            border-radius: 10px;
+
+            &:nth-child(odd){
+                background-color: $color4-d;
+                text-align: end;
+            }
+
+            .from{
+                font-size: 0.6em;
+                font-weight: bold;
+            }
+        }
+    }
+
 }
 
 @media (max-width: 900px) {
