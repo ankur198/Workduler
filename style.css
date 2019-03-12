@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Sniglet");
+a {
+  text-decoration: none;
+  color: black;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: whitesmoke;
+}
+
+body {
+  background: rgba(44, 44, 44, 0.933);
+}
+
+a {
+  padding: 20px 10px;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: whitesmoke;
+}
+
+nav {
+  height: 60px;
+  background-color: rgba(44, 44, 44, 0.933);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr auto;
+      grid-template-columns: auto 1fr auto;
+}
+
+nav img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 60px;
+  padding: 10px;
+}
+
+nav div {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav div #new {
+  background-color: #9d37ff;
+  font-weight: bold;
+  color: white;
+}
+
+nav div #new:hover {
+  background-color: #6a00ce;
+}
+
+nav div #pro {
+  background-color: #cc7c03;
+  font-weight: bold;
+  color: black;
+  font-family: "Sniglet", cursive;
+}
+
+nav div #pro:hover {
+  background-color: #ffaa2b;
+}
+
+section {
+  height: calc(100vh);
+}
+
+.boards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.boards .boardOverview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 400px;
+  padding: 20px;
+  margin: 10px;
+  background-color: #3eb77f;
+  border-radius: 15px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.boards .boardOverview:hover {
+  background-color: #36835f;
+}
+
+.boards .boardOverview a {
+  background-color: #9d37ff;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.boards .boardOverview a:hover {
+  background-color: #6a00ce;
+}
+
+.boards .boardOverview p {
+  font-size: 0.8em;
+}
+
+@media (max-width: 900px) {
+  .boards {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .boards {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  .boards {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+/*# sourceMappingURL=style.css.map */
