@@ -140,6 +140,12 @@ section {
       grid-template-columns: 1fr 1fr 1fr 1fr;
   -webkit-transition: 1s;
   transition: 1s;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .boards .boardOverview {
