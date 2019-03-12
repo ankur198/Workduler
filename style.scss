@@ -192,11 +192,17 @@ section {
     .boards {
         grid-template-columns: 1fr 1fr 1fr;
     }
+    .boardDetail{
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media (max-width: 650px) {
     .boards {
         grid-template-columns: 1fr 1fr;
+    }
+    .boardDetail{
+        grid-template-columns: 1fr;
     }
 }
 

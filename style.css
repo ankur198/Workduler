@@ -280,12 +280,20 @@ section {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
   }
+  .boardDetail {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (max-width: 650px) {
   .boards {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+  }
+  .boardDetail {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 
