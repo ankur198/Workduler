@@ -12,36 +12,36 @@ section{
 	height: 100vh;
 }
 .landing{
-	background: url('home.jpg');
-	background-size: cover;
-	scroll-snap-align: start;
+    background-image: url(home.jpg);
+    background-size: cover;
 }
-.landing img{
-	position: absolute;
-	bottom: 150px;
-}
-.typewriter{
-	position: absolute;
-	right: 250px;
-}
-h1{
+/* .landing img{
+    height: 100%;
+    z-index: -10;
+} */
+.typewriter h1{
     font-size: 3em;
     color: white;
 }
+.typewriter{
+    float: right;
+    text-align: end;
+    padding: 50px 40px 0px 0;
+    color: white
+}
 .typewriter p {
 	
-	font-family:"Gabriola"; 
-  color: white;
+    font-family:"Gabriola"; 
   float: right;	
-  font-size: 1em;
+  font-size: 1.3em;
   overflow: hidden; 
-  border-right: .10em solid white;
   white-space: nowrap; 
   margin-bottom: 200px; 
   letter-spacing: .15em; 
   animation: 
-    typing 7s steps(60, end),
-    blink-caret .5s step-end infinite;
+  typing 7s steps(60, end),
+  blink-caret .5s step-end infinite;
+  border-right: .10em solid white;
 }
 
 @keyframes typing {
@@ -54,45 +54,32 @@ h1{
   from, to { border-color: transparent }
   50% { border-color: white; }
 }
-button{
-	border:0px solid;
-	background-color: transparent;
-}
-button img{
-	width: 50px;
-}
-.about{
-	background:url('about.jpg');
-	background-size: cover;
-	box-sizing: border-box;
-	height: 100vh;
-}
-.about h1{
-	font-family: "Gabriola";
-	font-size:80px;
-    color: darkslategray;
+
+.login img{
+    height: 50px;
     width: 100%;
-	justify-content:center;
-    text-align: right;
-    padding: 40px;
-    
+    object-fit: scale-down;
+}
+.login{
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
 
+@media (max-width:1000px){
+    .typewriter{
+        background-color: #6A00CE;
+        margin: 20px;
+        border-radius: 15px;
+        margin-top: 10px;
+    }
+    .typewriter p{
+        animation: none;
+        overflow: auto;
+        white-space: unset;
+        color: white
+        ;font-size: 1.5em;
+        font-family: 'Courier New', Courier, monospace;
 
-#screenshots{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 500px;
-    grid-column-gap: 10px;
-}
-
-.about img{
-    width: 60%;
-    margin: 20px;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-
-.container{
-	scroll-snap-type: y mandatory;
+    }
 }
