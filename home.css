@@ -1,85 +1,91 @@
-*{
-	padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-section{
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	position: relative;
-	box-sizing: border-box;
-	height: 100vh;
+section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  box-sizing: border-box;
+  height: 100vh;
 }
-.landing{
-    background-image: url(home.jpg);
-    background-size: cover;
+.landing {
+  background-image: url(home.jpg);
+  background-size: cover;
 }
 /* .landing img{
     height: 100%;
     z-index: -10;
 } */
-.typewriter h1{
-    font-size: 3em;
-    color: white;
+.typewriter h1 {
+  font-size: 3em;
+  color: white;
 }
-.typewriter{
-    float: right;
-    text-align: end;
-    padding: 50px 40px 0px 0;
-    color: white
+.typewriter {
+  float: right;
+  text-align: end;
+  padding: 50px 40px 0px 0;
+  color: white;
+  max-height: 300px;
 }
 .typewriter p {
-	
-    font-family:"Gabriola"; 
-  float: right;	
+  font-family: "Gabriola";
+  float: right;
   font-size: 1.3em;
-  overflow: hidden; 
-  white-space: nowrap; 
-  margin-bottom: 200px; 
-  letter-spacing: .15em; 
-  animation: 
-  typing 7s steps(60, end),
-  blink-caret .5s step-end infinite;
-  border-right: .10em solid white;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 200px;
+  letter-spacing: 0.15em;
+  animation: typing 7s steps(60, end), blink-caret 0.5s step-end infinite;
+  border-right: 0.1em solid white;
 }
 
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
-
 
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: white; }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
 }
 
-.login img{
-    height: 50px;
-    width: 100%;
-    object-fit: scale-down;
+.login img {
+  height: 50px;
+  width: 100%;
+  object-fit: scale-down;
 }
-.login{
-    padding: 0;
-    margin: 0;
-    width: 100%;
+.login {
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
 
-@media (max-width:1000px){
-    .typewriter{
-        background-color: #6A00CE;
-        margin: 20px;
-        border-radius: 15px;
-        margin-top: 10px;
-    }
-    .typewriter p{
-        animation: none;
-        overflow: auto;
-        white-space: unset;
-        color: white
-        ;font-size: 1.5em;
-        font-family: 'Courier New', Courier, monospace;
-
-    }
+@media (max-width: 1000px) {
+  .typewriter {
+    background-color: rgba(106, 0, 206, 0.5);
+    margin: 20px;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 80px;
+  }
+  .typewriter p {
+    animation: blink-caret 0.5s step-end infinite;
+    overflow: auto;
+    white-space: unset;
+    color: white;
+    font-size: 1.5em;
+    font-family: "Courier New", Courier, monospace;
+  }
 }
