@@ -102,8 +102,11 @@ nav .hero {
 nav img {
   -o-object-fit: contain;
      object-fit: contain;
-  height: 60px;
-  padding: 10px;
+  -o-object-position: left;
+     object-position: left;
+  min-width: 20vw;
+  max-height: 60px;
+  padding: 10px 5px;
 }
 
 nav div {

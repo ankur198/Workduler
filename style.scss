@@ -49,8 +49,10 @@ nav {
 
     img {
         object-fit: contain;
-        height: $nav-height;
-        padding: 10px;
+        object-position: left;
+        min-width: 20vw;
+        max-height: $nav-height;
+        padding: 10px 5px;
     }
 
     div {
