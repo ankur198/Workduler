@@ -87,7 +87,8 @@ a {
 
 .navGap {
   margin-top: 60px;
-  width: 10%;
+  width: 100%;
+  display: block;
 }
 
 nav {
@@ -98,6 +99,7 @@ nav {
   position: fixed;
   top: 0;
   z-index: 100;
+  width: 100%;
   -ms-grid-columns: auto 1fr auto;
       grid-template-columns: auto 1fr auto;
 }

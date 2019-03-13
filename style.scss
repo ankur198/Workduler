@@ -39,7 +39,8 @@ a {
 
 .navGap {
     margin-top: $nav-height;
-    width: 10%;
+    width: 100%;
+    display: block;
 }
 
 nav {
@@ -49,6 +50,7 @@ nav {
     position: fixed;
     top: 0;
     z-index: 100;
+    width: 100%;
     grid-template-columns: auto 1fr auto;
 
     .hero {
