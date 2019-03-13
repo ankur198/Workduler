@@ -1,0 +1,20 @@
+$color1 : black;
+
+$font1: "Sniglet",
+cursive;
+$font2: "Montserrat",
+sans-serif;
+
+.features {
+    background-color: #efefef;
+    color: $color1;
+    padding: 20px;
+
+    h2,
+    h4 {
+        color: $color1;
+        padding: 10px;
+        font-size: 2.5em;
+        font-family: $font1;
+    }
+}

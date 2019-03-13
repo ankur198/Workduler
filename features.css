@@ -1,0 +1,14 @@
+.features {
+  background-color: #efefef;
+  color: black;
+  padding: 20px;
+}
+
+.features h2,
+.features h4 {
+  color: black;
+  padding: 10px;
+  font-size: 2.5em;
+  font-family: "Sniglet", cursive;
+}
+/*# sourceMappingURL=features.css.map */

@@ -4,16 +4,16 @@
   box-sizing: border-box;
 }
 section {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  position: relative;
-  box-sizing: border-box;
+  
   height: 100vh;
 }
 .landing {
   background-image: url(home.jpg);
   background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 /* .landing img{
     height: 100%;
@@ -71,6 +71,8 @@ section {
   margin: 0;
   width: 100%;
 }
+
+
 
 @media (max-width: 1000px) {
   .typewriter {
