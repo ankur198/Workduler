@@ -209,7 +209,7 @@ section {
   margin: 10px;
   background-color: #36835f;
   height: 100%;
-  padding: 80px;
+  padding: 30px;
   border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -221,8 +221,9 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .boardDetail #detail .subtask {
@@ -237,6 +238,10 @@ section {
 
 .boardDetail #detail .subtask div {
   margin: 5px;
+}
+
+.boardDetail #detail * {
+  padding: 5px 0;
 }
 
 .boardDetail #chat {
@@ -297,6 +302,7 @@ section {
   .boardDetail {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    padding: 0;
   }
 }
 
