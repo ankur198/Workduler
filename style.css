@@ -85,11 +85,18 @@ a {
   color: whitesmoke;
 }
 
+.navGap {
+  margin-top: 60px;
+}
+
 nav {
   height: 60px;
   background-color: rgba(44, 44, 44, 0.933);
   display: -ms-grid;
   display: grid;
+  position: fixed;
+  top: 0;
+  z-index: 100;
   -ms-grid-columns: auto 1fr auto;
       grid-template-columns: auto 1fr auto;
 }
