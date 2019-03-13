@@ -76,11 +76,12 @@ section {
 
 @media (max-width: 1000px) {
   .typewriter {
-    background-color: rgba(46, 8, 8, 0.7);
+    background: url(texture-1027559__340.jpg);
     margin: 20px;
     border-radius: 15px;
     margin-top: 10px;
     margin-bottom: 80px;
+    padding-left: 2PX;
   }
   .typewriter p {
     animation: blink-caret 0.5s step-end infinite;
